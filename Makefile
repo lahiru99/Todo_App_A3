@@ -5,9 +5,9 @@ bootstrap:
 	cd bootstrap && terraform init
 	cd bootstrap && terraform apply --auto-approve
 
-########
+#########
 # KOPS
-########
+#########
 
 kube-create-cluster:
 	kops create cluster --state=s3://$(shell cd bootstrap && terraform output kops_state_bucket_name) --name=rmit.k8s.local --zones="us-east-1a,us-east-1b" --master-size=t2.small --node-size=t2.small --node-count=1 --yes

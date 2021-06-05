@@ -75,6 +75,7 @@ jobs:
       - image: mongo:4.0
     environment:
       JEST_JUNIT_OUTPUT_DIR: test-output/
+      APP_PORT: 4000
     steps:
       - checkout
       - install_deps

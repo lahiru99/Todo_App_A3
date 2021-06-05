@@ -14,7 +14,7 @@ describe('Register', () => {
       })
     //console.log(res)
     expect(res.statusCode).toEqual(302)
-    expect(res.headers['location']).toEqual('/users/login/register')
+    expect(res.headers['location']).toEqual('/users/register')
 
     // end(done)    
   })

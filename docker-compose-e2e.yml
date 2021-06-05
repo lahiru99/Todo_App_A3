@@ -1,11 +1,11 @@
 version: "3"
 services:
   db:
-    container_name: db
+    container_name: mongodb
     image: mongo:4.0
     restart: always
     ports:
-      - '27017:27017'
+      - '27019:27019'
   qawolf:
     container_name: qawolf
     image: qabuild:latest

@@ -14,9 +14,9 @@ describe('Register', () => {
       })
     //console.log(res)
     expect(res.statusCode).toEqual(302)
-    expect(res.headers['location']).toEqual('/users/register')
+    expect(res.headers['location']).toEqual('/users/login')
 
-    // end(done)    
+    // end(done)
   })
 })
 
@@ -33,7 +33,7 @@ describe('FailLogin', () => {
     expect(res.statusCode).toEqual(302)
     expect(res.headers['location']).toEqual('/users/login')
 
-    // end(done)    
+    // end(done)
   })
 })
 
@@ -49,6 +49,6 @@ describe('SuccessLogin', () => {
     expect(res.statusCode).toEqual(302)
     expect(res.headers['location']).toEqual('/todos')
 
-    // end(done)    
+    // end(done)
   })
 })

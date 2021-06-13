@@ -99,5 +99,38 @@ To perform integration testing execute the following commands from the root dire
 npm run test-integration --prefix src/
 ```
 
+#bootstrap templates
+make bootstrap
+[Bootstrap screenshots](screenshots/boostrap.jpg) 
+
+#S3 buckets have been built
+[S3 buckets screenshots](screenshots/buckets.jpg) 
+
+#In infra folder terrafom apply is done to configure the backend
+#make init
+[make init screenshots](screenshots/make_init.jpg) 
+
+
+#vpc
+[VPC screenshot](screenshots/vpc.jpg) 
+
+#updated the KOPS in config.yml
+#contrainer repo
+[Container Repo screenshots](screenshots/container_repo.jpg) 
+
+#terrafmom apply 
+[terrafmom apply screenshot 1](screenshots/make_up1.jpg) 
+[terrafmom apply screenshot 2](screenshots/make_up2.jpg) 
+
+#Deploy your kubernetes cluster
+#make kube-deploy-cluster
+[KOPS cluster ](screenshots/kube_deploy_cluster.jpg)
+
+#B)c. Environment variables are set in your CircleCI Project
+[variables circel ci apply screenshots 2](screenshots/circelci_environment_varible.jpg) 
+
+#HELM chart
+
+
 
 ###### This project is licensed under the MIT Open Source License

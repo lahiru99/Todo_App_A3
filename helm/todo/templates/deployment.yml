@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "todo"
+
+spec:
+  selector:
+    matchLabels:
+      app: "todo"
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: "todo"
+    spec:
+      containers:
+      - image: ${IMAGE_TAG}
+        imagePullPolicy: Always
+        name: "todo"
+        ports:
+        - containerPort: 80  

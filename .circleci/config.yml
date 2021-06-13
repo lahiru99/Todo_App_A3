@@ -129,7 +129,7 @@ jobs:
   package:
     machine: true
     environment:
-      ECR: private
+      ECR: 189647186168.dkr.ecr.us-east-1.amazonaws.com
       reponame: rmit-assignment3-container-repo
     steps:
       - checkout

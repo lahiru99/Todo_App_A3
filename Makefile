@@ -34,10 +34,10 @@ kube-config:
 #######
 
 namespace-up:
-
+	kubectl create namespace --state=s3://$(shell cd bootstrap && terraform output kops_state_bucket_name)
 
 namespace-down:
-
+	kubectl delete namespaces --state=s3://$(shell cd bootstrap && terraform output kops_state_bucket_name)
 ########
 # SSH
 ########
